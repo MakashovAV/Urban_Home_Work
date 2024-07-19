@@ -11,9 +11,9 @@ for i in numbers:
         if i % j == 0:
             is_prime = False
             break
-    if is_prime == True and i != 1:
+    if is_prime and i != 1:
         primes.append(i)
-    if is_prime == False:
+    if not is_prime:
         not_primes.append(i)
 print(primes)
 print(not_primes)
