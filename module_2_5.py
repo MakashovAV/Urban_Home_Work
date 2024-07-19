@@ -4,12 +4,14 @@
 def get_matrix (n,m,value):
     matrix = []
     for i in range(n):
-        print('I=', i)
         matrix.append([])
-        print(matrix)
         for j in range(m):
-            print('j= ', j)
- #           matrix[0][i].append = value
-            print(matrix)
+            matrix[i].append(value)
+    return matrix
             
-get_matrix(2, 3, 5)
+result1 = get_matrix(2, 2, 10)
+result2 = get_matrix(3, 5, 42)
+result3 = get_matrix(4, 2, 13)
+print(result1)
+print(result2)
+print(result3)
