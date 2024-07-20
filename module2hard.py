@@ -5,7 +5,7 @@
 n = int(input('Введите число от 3 до 20'))
 print(n)
 result = ''
-for i in range(1, n):
+for i in range(1, n//2):
     print('I= ', i)
     for j in range(n, 0, -1):
         print('j= ', j)
@@ -13,4 +13,3 @@ for i in range(1, n):
             result += str(i) + str(j)
             
 print('Пароль для n числа: ',result)
-
