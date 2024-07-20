@@ -1,15 +1,20 @@
-# Дополнительное практическое задание по модулю: "Основные операторы"
-# Цель: Применить знания полученные в модуле, решив задачу повышенного уровня сложности
-# Задание "Слишком древний шифр":
+n= 20
+result = []
+divider =[]
+for i in range(3, n+1):
+    print(i)
+    if n % i == 0:
+        divider.append(i)
+print(divider)
 
-n = int(input('Введите число от 3 до 20'))
-print(n)
-result = ''
-for i in range(1, n//2):
-    print('I= ', i)
-    for j in range(n, 0, -1):
-        print('j= ', j)
-        if n % (i + j) == 0:
-            result += str(i) + str(j)
-            
-print('Пароль для n числа: ',result)
+for i in range(1, n):
+    for j in range(1, n):
+        divider_1 = divider
+        for k in divider_1:
+            if i + j == k:
+                result.append(str(i) + str(j))
+
+                
+print(result)
+# 13 14 19 119 23 28 218 37 317 46 416 515 614 713 812 911
+                
