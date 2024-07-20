@@ -1,4 +1,4 @@
-n= 20
+n= 12
 result = []
 divider =[]
 for i in range(3, n+1):
@@ -11,9 +11,10 @@ for i in range(1, n //2):
     for j in range(1, n):
         for k in divider:
             if i + j == k and i != j:
-                result.append(str(i) + str(j))
+                result.append([i,j])
 
                 
 print(result)
+
 # 13 14 19 119 23 28 218 37 317 46 416 515 614 713 812 911
                 
